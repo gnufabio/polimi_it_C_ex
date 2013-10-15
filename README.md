@@ -4,7 +4,7 @@ PoliMi IT Basic Exercises
 Some C Exercises from a PoliMi IT student.
 
 # Some details #
-* Preferred Editor: Geany
+* Preferred Editor: Geany | Orwell Dev-C++
 * Environment: Ubuntu Linux
 * Compiler: GCC
 * C guide: K&R, "The C Programming Language"
