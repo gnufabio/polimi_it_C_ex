@@ -176,7 +176,6 @@ int load_data(Canzoniere *canzoniere) {
 				canzoniere->brani[brano - 1].fine = ftell(fpin) - (strlen(buff) + 1);
 			}
 			/* E quelli del brano corrente */
-			canzoniere->brani[brano].inizio = ftell(fpin);
 			canzoniere->brani[brano].linea_inizio = linea + 1;
 			ricerca_titolo = 1;
 			continue;
@@ -185,6 +184,7 @@ int load_data(Canzoniere *canzoniere) {
 		/* Stiamo ricercando il titolo del brano corrente */
 		if(ricerca_titolo) {
 			strcpy(canzoniere->brani[brano].titolo, buff);
+			canzoniere->brani[brano].inizio = ftell(fpin);
 			ricerca_titolo = 0;
 			continue;
 		}
