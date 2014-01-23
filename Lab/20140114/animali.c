@@ -18,7 +18,6 @@ lista_animali leggi_lista(FILE *);
 void stampa_animali(FILE *, lista_animali, tipo_animale);
 void genera_indice(FILE *, lista_animali);
 
-
 int main() {
 	lista_animali lista;
 	FILE *f;
@@ -30,6 +29,9 @@ int main() {
 	
 	lista = leggi_lista(f);
 	genera_indice(out, lista);
+	
+	fclose(f);
+	fclose(out);
 	
 	return 0;
 }
