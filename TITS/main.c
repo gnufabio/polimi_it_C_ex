@@ -75,7 +75,7 @@ int main() {
 						pos = getposfromstdin();
 					} else {
 						uwifl = 1;
-						printscheme(matrix);
+						printscheme(t->matrix);
 						printf("Please, make your play (x,y): ");
 						pos = getposfromstdin();
 					}
