@@ -1,11 +1,9 @@
-PoliMi IT Basic Exercises
+TITS
 ================
 
-Some C Exercises from a PoliMi IT student.
+## What is TITS? ##
+TITS is a recursive acronym that stands for 'TITS Is a Tictactoe Solver'.
+It's a sort of Artificial Intelligence, which works generating a tree of all possible scenarios, and chooses the best path according to some criteria (win statistics, lose statistics). This is possible thanks to the limited size of the assigned problem.
 
-# Some details #
-* Preferred Editor: Geany | Orwell Dev-C++
-* Environment: Ubuntu Linux
-* Compiler: GCC
-* C guide: K&R, "The C Programming Language"
-* Website: http://www.gnufabio.tk
+## Compiling ##
+Just launch 'compile.sh'.
